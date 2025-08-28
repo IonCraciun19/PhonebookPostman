@@ -230,6 +230,9 @@
 										"exec": [
 											"pm.test(\"Body matches string: Contact was added!\", function () {\r",
 											"    pm.expect(pm.response.text()).to.include(\"Contact was added!\");\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
 											"});"
 										],
 										"type": "text/javascript",
@@ -240,8 +243,11 @@
 									"listen": "prerequest",
 									"script": {
 										"id": "8de9f30b-70e3-484f-bc6e-d1c5ea1b5455",
-										"exec": [],
-										"type": "text/javascript"
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
 									}
 								}
 							],
