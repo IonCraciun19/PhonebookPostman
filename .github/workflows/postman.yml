@@ -11,7 +11,7 @@ jobs:
         run: |
           powershell.exe -NoProfile -InputFormat None -ExecutionPolicy AllSigned -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://dl-cli.pstmn.io/install/win64.ps1'))"
       - name: Login to Postman CLI
-        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+        run: postman login --with-api-key ${{ secrets.API_KEY }}
       - name: Run API tests
         run: |
           postman collection run "47728874-ad69ee24-046e-4b51-a064-ef1ed4763443" -e "47728874-5917c0e8-d35b-47cc-9c72-8aea999fac30"
