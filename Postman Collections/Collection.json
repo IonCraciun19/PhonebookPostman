@@ -463,7 +463,7 @@
 										}
 									}
 								},
-								"url": "{{BaseURI}}/v1/contacts/{id}"
+								"url": "{{BaseURI}}/v1/contacts/{{id}}"
 							},
 							"response": []
 						},
