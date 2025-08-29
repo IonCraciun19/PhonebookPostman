@@ -402,9 +402,9 @@
 									"script": {
 										"id": "2034616e-8698-4fdf-b85a-0a9fb7fb809a",
 										"exec": [
-											"pm.test(\"Test message equals: contact was not deleted!\", function () {\r",
+											"pm.test(\"Test message equals: contact was deleted!\", function () {\r",
 											"    var jsonData = pm.response.json();\r",
-											"    pm.expect(jsonData.message).to.eql(\"Contact was not deleted!\");\r",
+											"    pm.expect(jsonData.message).to.eql(\"Contact was deleted!\");\r",
 											"});"
 										],
 										"type": "text/javascript",
